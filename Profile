@@ -1,0 +1,2 @@
+web: gunicorn Secret_Santa_game.wsgi –log-file -
+web: waitress --port=$PORT Secret_Santa_game.wsgi:application
