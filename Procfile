@@ -1,3 +1,3 @@
-web: gunicorn appname.wsgi:application --log-file - --log-level debug
+web: gunicorn tg_admin.wsgi:application --log-file - --log-level debug
 python manage.py collectstatic --noinput
 manage.py migrate
