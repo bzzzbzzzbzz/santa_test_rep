@@ -1,2 +1,0 @@
-web: gunicorn santa_test_rep.wsgi –log-file -
-web: waitress --port=$PORT santa_test_rep.wsgi:application
